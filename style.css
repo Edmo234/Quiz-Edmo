@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 2% ;
+    background-color: rgb(208, 208, 208);
+
+   
+}
+#quiz{
+    margin-top: 10%;
+
+}
+button{
+    display: block;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+.resposta{
+    margin: auto auto;
+    margin-bottom: 3%;
+}
+.resposta:hover{
+    background: rgb(114, 200, 155);
+}
+.resposta.selecionada{
+    background: rgb(220, 134, 72);
+    color: whitesmoke;
+}
+
+#confirm{
+    margin: auto auto;
+    margin-top: 4%;
+    border: none;
+    border-radius: 12px;
+    background-color: green;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-bottom: 100%;
+}
+.errada{
+    background: rgb(176, 4, 4);
+    color: whitesmoke;
+}
+.correta{
+    background: rgb(4, 176, 4);
+    color: whitesmoke;
+    animation: piscaCerto 0.9s infinite;
+}
+@keyframes piscaCerto{
+    0% {background-color: rgb(4, 176, 4);}
+    50% {background-color: transparent;}
+    100% {background-color: seagreen;}
+}
+#status{
+    padding: 20%;
+    
+        
+}
+#novoJogo{
+    margin: auto auto;
+    border-radius: 12px;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+}
+
+.oculto{
+    display: none;
+
+}
